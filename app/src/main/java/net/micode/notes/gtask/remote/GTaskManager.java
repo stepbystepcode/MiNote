@@ -16,6 +16,29 @@
 
 package net.micode.notes.gtask.remote;
 
+/**
+ * GTaskManager 类是Google任务同步管理的实现类
+ * 
+ * 功能：
+ * - 管理与Google Tasks的数据同步
+ * - 处理笔记与Google Tasks的数据转换
+ * - 支持增量同步和冲突解决
+ * - 管理同步状态和进度跟踪
+ * - 提供同步错误处理和恢复
+ * 
+ * 改进点：
+ * 1. 应采用更现代的Google API客户端库
+ * 2. 缺少完善的离线同步策略
+ * 3. 应优化同步性能和数据传输效率
+ * 4. 缺少用户友好的同步状态反馈
+ * 
+ * 不足之处：
+ * 1. 同步逻辑较为复杂，难以维护
+ * 2. 缺少适当的同步冲突解决策略
+ * 3. 未提供完整的同步错误恢复机制
+ * 4. 同步过程中的用户体验有待改进
+ */
+
 import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.ContentUris;
@@ -47,7 +70,10 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 
-
+/**
+ * GTaskManager is a class that manages the synchronization of data between the local notes database and Google Tasks.
+ * It provides methods for syncing data, handling conflicts, and managing the synchronization state.
+ */
 public class GTaskManager {
     private static final String TAG = GTaskManager.class.getSimpleName();
 

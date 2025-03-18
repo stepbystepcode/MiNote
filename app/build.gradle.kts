@@ -45,13 +45,13 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
 //    implementation(fileTree(mapOf(
-//        "dir" to "/Users/stepbystep/Documents/school/software/MiNote/httpcomponents-client-4.5.14-bin/lib",
+//        "dir" to "libs",
 //        "include" to listOf("*.aar", "*.jar"),
 //        "exclude" to emptyList<String>()
 //    )))
-    implementation(files("/Users/stepbystep/Documents/school/software/MiNote/httpcomponents-client-4.5.14-bin/lib/httpclient-osgi-4.5.14.jar"))
-    implementation(files("/Users/stepbystep/Documents/school/software/MiNote/httpcomponents-client-4.5.14-bin/lib/httpclient-win-4.5.14.jar"))
-    implementation(files("/Users/stepbystep/Documents/school/software/MiNote/httpcomponents-client-4.5.14-bin/lib/httpcore-4.4.16.jar"))
+    implementation(files("libs/httpclient-osgi-4.5.14.jar"))
+    implementation(files("libs/httpclient-win-4.5.14.jar"))
+    implementation(files("libs/httpcore-4.4.16.jar"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
